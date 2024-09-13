@@ -1,0 +1,50 @@
+.footer {
+    background-color: #f8f9fa;
+}
+
+.logo-footer {
+    width: 50px;
+}
+
+.footer h5 {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer h6 {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.footer .list-unstyled a {
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.footer .list-unstyled a:hover {
+    color: #007bff;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #6c757d;
+}
+
+.form-group button:hover {
+    color: #007bff;
+}

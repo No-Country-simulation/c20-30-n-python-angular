@@ -1,0 +1,56 @@
+.image1 {
+    width: 100px;
+    position: relative;
+    left: 90px;
+  }
+  
+  /* Ajuste del menú para pantallas pequeñas */
+  .move {
+    position: relative;
+    right: 40%;
+    top: 25px;
+  }
+  
+  /* Estilos generales de los enlaces en el menú */
+  .link {
+    padding: 0 20px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Estilos generales de los botones */
+  .nav-pills {
+    position: relative;
+    right: 5%;
+    top: 15px;
+  }
+  
+  /* Botón "Login" */
+  .nav-link.active {
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Botón "SignUp" */
+  .nav-link {
+    background-color: white;
+    color: #0062E6;
+    border: 2px solid #33AEFF;
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover sobre el botón "SignUp" */
+  .nav-link:not(.active):hover {
+    background-color: #f0f8ff;
+  }
+  
+ 
+  

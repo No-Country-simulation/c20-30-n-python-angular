@@ -1,0 +1,33 @@
+/* Aseguramos que el html y el body ocupen el 100% de la altura del viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* El contenedor principal de la app debe ocupar todo el espacio */
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Aseguramos que el contenido principal crezca para ocupar el espacio disponible */
+  app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* El contenido entre el header y footer debe ocupar el espacio restante */
+  .main-content {
+    flex: 1;
+  }
+  
+  /* El header y el footer se mantienen en su lugar */
+  app-header {
+    flex-shrink: 0; /* El header no se reduce */
+  }
+  
+  app-footer {
+    flex-shrink: 0; /* El footer no se reduce */
+  }
+  
