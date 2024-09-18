@@ -1,0 +1,32 @@
+{
+  "testimonials": [
+    {"name": "Andy Carnation", "rating": 4.5, "shortReview": "With seamless navigation...", "image": "/assets/doctora.jpeg"},
+    {"name": "Andy Carnation", "rating": 4.5, "shortReview": "With seamless navigation...", "image": "/assets/doctora.jpeg"},
+    {"name": "Andy Carnation", "rating": 4.5, "shortReview": "With seamless navigation...", "image": "/assets/doctora.jpeg"}
+  ],
+  "questions": [
+    {"question": "Are the platform's doctors certified?", "answer": "Yes, all doctors on our platform are certified professionals.", "open": false},
+    {"question": "How the video call works?", "answer": "You can start a video call by clicking the 'Start Call' button in the app.", "open": false},
+    {"question": "Can you prewrite medication?", "answer": "No, doctors need to assess your condition before prescribing any medication.", "open": false}
+  ],
+    "doctors": [
+    {"name": "Norman Osborn", "specialty": "Cardiologist Specialist", "rating": 4.5, "reviews": "1,230", "image": "/assets/doctora.jpeg"},
+    {"name": "Meredith Grey", "specialty": "General Medic", "rating": 4.5, "reviews": "1,230", "image": "/assets/doctora.jpeg"},
+    {"name": "Gregorio Casa", "specialty": "Diagnostic Specialist", "rating": 4.5, "reviews": "1,230", "image": "/assets/doctora.jpeg"},
+    {"name": "James Willsson", "specialty": "Cardiologist Specialist", "rating": 4.5, "reviews": "1,230", "image": "/assets/doctora.jpeg"},
+    {"name": "Christ Toub", "specialty": "Therapy Specialist", "rating": 4.5, "reviews": "1,230", "image": "/assets/doctora.jpeg"},
+    {"name": "Trece", "specialty": "Cardiologist Specialist", "rating": 4.5, "reviews": "1,230", "image": "/assets/doctora.jpeg"},
+    {"name": "Alice Johnson", "specialty": "Pediatrician", "rating": 4.7, "reviews": "500", "image": "/assets/doctora.jpeg"},
+    {"name": "Robert Smith", "specialty": "Orthopedic Specialist", "rating": 4.6, "reviews": "800", "image": "/assets/doctora.jpeg"},
+    {"name": "Linda Martinez", "specialty": "Neurologist", "rating": 4.8, "reviews": "650", "image": "/assets/doctora.jpeg"},
+    {"name": "Michael Brown", "specialty": "Endocrinologist", "rating": 4.4, "reviews": "700", "image": "/assets/doctora.jpeg"},
+    {"name": "Emily Davis", "specialty": "Dermatologist", "rating": 4.9, "reviews": "900", "image": "/assets/doctora.jpeg"},
+    {"name": "Daniel Lee", "specialty": "Urologist", "rating": 4.6, "reviews": "550", "image": "/assets/doctora.jpeg"},
+    {"name": "Sophia White", "specialty": "Gastroenterologist", "rating": 4.7, "reviews": "600", "image": "/assets/doctora.jpeg"},
+    {"name": "William Taylor", "specialty": "Rheumatologist", "rating": 4.5, "reviews": "700", "image": "/assets/doctora.jpeg"},
+    {"name": "Olivia Wilson", "specialty": "Hematologist", "rating": 4.8, "reviews": "750", "image": "/assets/doctora.jpeg"},
+    {"name": "James Anderson", "specialty": "Oncologist", "rating": 4.9, "reviews": "800", "image": "/assets/doctora.jpeg"},
+    {"name": "Charlotte Brown", "specialty": "Pulmonologist", "rating": 4.4, "reviews": "850", "image": "/assets/doctora.jpeg"}
+  ]
+  
+}

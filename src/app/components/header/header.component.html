@@ -1,17 +1,36 @@
 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+    <a routerLink="/home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
       <img class="image1" src="/assets/HLogo1.png" alt="No se pudo cargar la imagen">
     </a>
   
     <div class="move">
       <a href="#" class="link">Doctors</a>
-      <a href="#" class="link">Specialities</a>
+      <a routerLink="/specialities" class="link">Specialities</a>
       <a href="#" class="link">About</a>
     </div>
   
     <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Login</a></li>
+      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page" data-bs-toggle="modal" data-bs-target="#login">Login</a></li>
       <li class="nav-item"><a href="#" class="nav-link">SignUp</a></li>
     </ul>
   </header>
   
+  <!--login-->
+  <!-- Full screen modal -->
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="fullScreenModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="fullScreenModalLabel">Modal en Pantalla Completa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Contenido del modal...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>

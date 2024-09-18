@@ -1,0 +1,74 @@
+<div class="search-container">
+    <div class="tittle-question"></div>
+    <h1>Search and Book Appointments</h1>
+    <div class="cont-buttons">
+        <input class="search-specialitie" type="text" placeholder="Specialty / Doctor">
+        <input class="date-search" type="date"  >
+        <button class="input-search" type="submit">Search</button>
+    </div>
+</div>
+
+
+<div class="container-specialitie">
+    <div class="filters">
+        <h3>Refine Search Results</h3>
+        <input type="text" placeholder="Search keywords" class="search-input">
+
+        <h4>Specialty</h4>
+        <ul class="filter-list">
+            <li><input type="checkbox"> Mental Health</li>
+            <li><input type="checkbox"> Oral Health</li>
+            <li><input type="checkbox"> Brain Health</li>
+            <li><input type="checkbox"> Medical Imaging</li>
+            <li><input type="checkbox"> Skin Conditions</li>
+            <li><input type="checkbox"> Urinary Tract Health</li>
+            <li><input type="checkbox"> Mental Wellness</li>
+            <li class="view-all">View All...</li>
+        </ul>
+
+        <h4>Professional Credentials</h4>
+        <ul class="filter-list">
+            <li><input type="checkbox"> MD</li>
+            <li><input type="checkbox"> PhD</li>
+            <li><input type="checkbox"> DDS</li>
+            <li class="view-all">View All...</li>
+        </ul>
+
+        <h4>Type of Contact</h4>
+        <ul class="filter-list">
+            <li><input type="checkbox"> Video Call</li>
+            <li><input type="checkbox"> Phone Call</li>
+            <li><input type="checkbox"> Live Chat</li>
+        </ul>
+
+        <h4>Consultation Cost</h4>
+        <ul class="filter-list">
+            <li><input type="radio" name="cost"> Less than $50</li>
+            <li><input type="radio" name="cost"> $50 - $100</li>
+            <li><input type="radio" name="cost"> More than $100</li>
+        </ul>
+
+        <div class="cost-range">
+            <label for="cost-range">Cost Range</label>
+            <input type="range" id="cost-range" min="0" max="200" step="10">
+        </div>
+    </div>
+
+    <div class="results" >
+        <h3>Displaying 176 results</h3>
+            <select class="select-tittle">
+                <option value="highest-rated">Sort by: Highest Rated</option>
+            </select>
+
+        <div class="result-cards"  >
+            <div class="card" *ngFor="let doctor of doctors">
+                <img [src]="doctor.image" alt="{{doctor.name}}">
+                <div class="card-details">
+                    <h4>{{doctor.name}}</h4>
+                    <p>{{doctor.specialty}}</p>
+                </div>
+            </div>
+            <!-- Fin de un bloque de tarjeta -->
+        </div>
+    </div>
+</div>

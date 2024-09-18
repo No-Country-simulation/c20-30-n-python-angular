@@ -1,7 +1,7 @@
 <div class="centered-container">
     <div class="row  banner">
         <div class="col-md-6 d-flex flex-column justify-content-center">
-            <h1 class="fw-bold display-4">Do you need to see a doctor?</h1>
+            <h1 style="font-weight: 700; font-size: 70px;">Do you need to see a doctor ?</h1>
             <a href="#" class="btn btn-primary ">Contact Now!</a>
         </div>
         <div class="col-md-6 d-flex justify-content-center align-items-center p-0">
@@ -11,40 +11,43 @@
 </div>
 
 <!--SPECIALITIES-->
-<div class="container">
+<div class="container" >
     <div class="chips-container">
         <button class="chip" *ngFor="let label of labels" [class.active]="label === selectedLabel"
             [class.gradient]="label === 'All'" (click)="selectLabel(label)">
             {{ label }}
         </button>
     </div>
-    <h2 class="title">Know Your Doctor's</h2>
-    <!-- Carrusel de doctores -->
-    <div class="carousel-container">
-        <button class="carousel-nav prev" (click)="prev()">&#10094;</button>
-        <div class="cards">
-            <div class="card" *ngFor="let doctor of visibleDoctors">
-                <img [src]="doctor.image" alt="{{doctor.name}}">
-                <div class="card-info">
-                    <h3>{{ doctor.name }}</h3>
-                    <p>{{ doctor.specialty }}</p>
-                    <div class="rating">
-                        <span class="stars">⭐⭐⭐⭐⭐</span>
-                        <span>{{ doctor.rating }}/5</span>
+    <div >
+            <h2 class="title">Know Your Doctor's</h2>
+        <div class="carousel-container">
+            <button class="carousel-nav prev" (click)="prev()">&#10094;</button>
+            <div class="cards">
+                <div class="card" *ngFor="let doctor of visibleDoctors">
+                    <img [src]="doctor.image" alt="{{doctor.name}}">
+                    <div class="card-info">
+                        <h3>{{ doctor.name }}</h3>
+                        <p>{{ doctor.specialty }}</p>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span>{{ doctor.rating }}/5</span>
+                        </div>
+                        <p>{{ doctor.reviews }} User Reviews</p>
                     </div>
-                    <p>{{ doctor.reviews }} User Reviews</p>
                 </div>
             </div>
-        </div>
 
-        <button class="carousel-nav next" (click)="next()">&#10095;</button>
+            <button class="carousel-nav next" (click)="next()">&#10095;</button>
+        </div>
     </div>
 </div>
 
+<div class="div-tittle">
+    <div class="tittle-question"></div>
+    <h2>Testimonials</h2>
+</div>
 <!--Testimonials-->
 <div class="testimonials-section">
-    <!-- Título -->
-    <h2 class="title">Testimonials</h2>
     <div class="testimonials-carousel">
         <div class="testimonial-card" *ngFor="let testimonial of testimonials">
             <img [src]="testimonial.image" alt="{{testimonial.name}}" class="avatar">
@@ -77,13 +80,11 @@
 </div>
 
 <!--Frecuent question-->
+<div class="div-tittle">
+    <div class="tittle-question"></div>
+    <h2>Frequent questions</h2>
+</div>
 <div class="faq-section">
-    <div class="div-tittle">
-        <div class="tittle-question"></div>
-        <h2>Frequent questions</h2>
-    </div>
-
-
 
     <div class="faq-item" *ngFor="let question of questions">
         <div class="faq-question" (click)="toggleAnswer(question)">
@@ -92,6 +93,41 @@
         </div>
         <div class="faq-answer" *ngIf="question.open">
             {{ question.answer }}
+        </div>
+    </div>
+</div>
+
+<div class="steps-container">
+    <div class="step-box step-1">
+        <div class="step-content">
+            <div class="step-number">1</div>
+            <img src="assets/perfil.png" alt="Find Specialist" class="step-image"  style="transform: rotate(345deg);">
+            <div class="text-content">
+                <h3>Find Your Specialist</h3>
+                <p>Users research and browse profiles of doctors based on speciality, and others criteria</p>
+            </div>
+        </div>
+    </div>
+    <div class="step-box step-2">
+        <div class="step-content">
+            <div class="step-number">2</div>
+            <img src="assets/security.png" alt="Schedule Timing" class="step-image">
+            <div class="text-content">
+                <h3>Schedule Timing</h3>
+                <p>Patients select an available time slot that suits their schedule with options for notifications and
+                    updates</p>
+            </div>
+        </div>
+    </div>
+    <div class="step-box step-3">
+        <div class="step-content">
+            <div class="step-number">3</div>
+            <img src="assets/historial.png" alt="Consult with Doctor" class="step-image">
+            <div class="text-content">
+                <h3>Consult with Doctor</h3>
+                <p>Patients connect with doctors through videocalls alongside audio and chat for treatment plan and
+                    prescription sharing</p>
+            </div>
         </div>
     </div>
 </div>

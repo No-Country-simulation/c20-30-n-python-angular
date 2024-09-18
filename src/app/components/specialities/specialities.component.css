@@ -1,0 +1,195 @@
+.search-container {
+  background: linear-gradient(to right,#b2cafd, #92B4FC, #FAC198, #e1eaff, #f8f8f8);
+  padding: 20px;
+  text-align: center;
+  height: 20%;
+}
+
+.tittle-question {
+  background-color: #92B4FC;
+  height: 20px;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 60px;
+}
+
+.search-input{
+  width: 200px;
+}
+
+.search-container h1 {
+  color: #263238;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  position: relative;
+
+}
+
+.cont-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 80%;
+  height: 150px;
+  margin: 0 auto;
+  
+}
+
+
+.search-specialitie{
+  padding: 10px;
+  border: 1px solid #2299E2;
+  border-radius: 10px;
+  width: 450px;
+  height: 30px;
+  position: relative;
+  right: 150px;
+}
+
+.date-search{
+  padding: 10px;
+  border: 1px solid #2299E2;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  position: relative;
+  right: 100px;
+}
+
+/* Botón de búsqueda */
+.input-search {
+  background-color: #0049F9;
+  color: white;
+  border: none;
+  width: 110px;
+  border-radius: 10px;
+  height: 30px;
+  position: relative;
+  right: 50px;
+}
+
+/* Efecto hover para el botón */
+.input-search:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* refine-search.component.css */
+.container-specialitie {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+  
+}
+
+.filters {
+  width: 45%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.filters h3,
+.filters h4 {
+  color: #333;
+}
+
+.filter-list {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-list li {
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.view-all {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.cost-range {
+  margin-top: 20px;
+}
+
+.cost-range input {
+  width: 100%;
+}
+
+.results {
+  background-color: #263238;
+  width: 100%;
+}
+
+.results h3 {
+  margin-bottom: 10px;
+  color: white;
+  width: 300px;
+  position: relative;
+  left: 50px;
+  top: 50px;
+  font-size: 20px;
+}
+
+.select-tittle {
+  border: 1px solid #2299E2;
+  border-radius: 10px;
+  position: relative;
+  left: 75%;
+  top: 15px;
+  font-size: 14px;
+  background-color: #e6e3e3;
+  color: #333;
+  padding: 5px;
+  width: 20%;
+  text-align: center;
+}
+
+.result-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 220px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  left: 50px;
+  top: 50px;
+  margin-bottom: 50px;
+}
+
+.card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 120px;
+  height: 110px;
+}
+
+.card h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.card p {
+  color: #888;
+}
